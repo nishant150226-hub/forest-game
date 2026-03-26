@@ -30,7 +30,10 @@ A browser-based <b>3D forest exploration game</b> built with <b>Three.js</b>.
 <img src="screenshots/gameplay.gif" width="800">
 </p>
 
-*(Add a gameplay GIF inside `/screenshots/gameplay.gif`)*
+![Gameplay Screenshot](screenshots/ss3.png)
+![Gameplay Screenshot](screenshots/ss2.png)
+![Gameplay Screenshot](screenshots/ss1.png)
+
 
 ---
 
