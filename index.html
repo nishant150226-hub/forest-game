@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forest Game</title>
+
+<style>
+body{
+margin:0;
+overflow:hidden;
+}
+canvas{
+display:block;
+}
+#staminaBarContainer{
+position:fixed;
+bottom:30px;
+left:30px;
+width:200px;
+height:20px;
+background:#333;
+border-radius:10px;
+}
+
+#staminaBar{
+height:100%;
+width:100%;
+background:#00ff88;
+border-radius:10px;
+}
+#crosshair{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+pointer-events:none;
+width:30px;
+height:30px;
+}
+
+.cross{
+position:absolute;
+background:white;
+box-shadow:0 0 6px rgba(255,255,255,0.8);
+}
+
+.cross.top{
+width:2px;
+height:10px;
+left:14px;
+top:0;
+}
+
+.cross.bottom{
+width:2px;
+height:10px;
+left:14px;
+bottom:0;
+}
+
+.cross.left{
+height:2px;
+width:10px;
+left:0;
+top:14px;
+}
+
+.cross.right{
+height:2px;
+width:10px;
+right:0;
+top:14px;
+}
+
+.cross.center{
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+left:13px;
+top:13px;
+}
+</style>
+
+</head>
+<body>
+    
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160/build/three.module.js",
+      "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.160/examples/jsm/"
+    }
+  }
+</script>
+<script type="module" src="./main.js"></script>
+<div id="staminaBarContainer">
+<div id="staminaBar"></div>
+</div>
+<div id="crosshair">
+<div class="cross top"></div>
+<div class="cross bottom"></div>
+<div class="cross left"></div>
+<div class="cross right"></div>
+<div class="cross center"></div>
+</div>
+
+</body>
+</html>
